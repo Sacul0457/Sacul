@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background: linear-gradient(135deg, #10131a, #3e4966);
+            background: linear-gradient(135deg, #0f101c,#3b3e5e);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -18,14 +18,6 @@
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
-        .avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
         .main-title {
             font-size: 60px;
             color: #aabff0;
@@ -43,7 +35,7 @@
         .about-me{
             font-size: 22px;
             color: #f1f4f9;
-            font-style: bold;
+            font-weight: bold;
             text-decoration: underline;
             margin-top: 15px;
             text-align: center;
@@ -82,8 +74,8 @@
         }
 
         .contact-button:hover {
-            background-color: #5a7bce;
-            transform: scale(1.05);
+            background-color: #181829;
+            transform: scale(1.10);
         }
 
         footer {
@@ -94,10 +86,44 @@
             text-align: center;
             width: 100%;
         }
+        .avatar-background{
+            background-color: #1c2773;
+            color: white;
+            border: none;   
+            padding: 30px 90px;
+            border-radius: 30px;
+            position: absolute; left: 30px; top: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .avatar{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute; left: 10px; top: 5px;
+        }
+        .avatar-text{
+            font-size: 20px;
+            color : #000000;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            text-align: left;
+            position: absolute; left: 70px; top: 15px;
+        }
+        .avatar-background:hover {
+            background-color: #596df7;
+            transform: scale(1.10);
+        }
+    
     </style>
 </head>
 
 <body>
+    <div class="avatar-background">
+        <img src="506fb79ca3f554614ca8389c19771676.webp" alt="Avatar" class="avatar">
+        <a href="https://discord.com/users/802167689011134474"><span class="avatar-text">Sacul0457</span></a>
+    </div>
+
+
+
     <h1 class="main-title">Sacul0457</h1>
     <h4 class="maintitle-subtitle">Develops Discord bots for fun! (I love cookies 🍪!)</h4>
     
