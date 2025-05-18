@@ -5,174 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sacul.html</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background: linear-gradient(135deg, #0f101c,#3b3e5e);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .main-title {
-            font-size: 60px;
-            color: #aabff0;
-            margin-bottom: 15px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-        }
-
-        .maintitle-subtitle {
-            font-size: 22px;
-            color: #a0b4d5;
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: lighter;
-        }
-        .about-me{
-            font-size: 22px;
-            color: #f1f4f9;
-            font-weight: bold;
-            text-decoration: underline;
-            margin-top: 15px;
-            text-align: center;
-            max-width: 85%;
-            line-height: 2.0;
-        }
-        .currently-learning {
-            font-size: 20px;
-            color: #f1f4f9;
-            font-style: italic;
-            margin-top: 20px;
-            text-align: center;
-            max-width: 100%;
-            line-height: 1.6;
-        }
-        .loves{
-            font-size: 20px;
-            color: f1f4f9;
-            font-style: italic;
-            margin-top: 10px;
-            text-align: center;
-            max-width: 90%;
-            line-height: 1.6;
-        }
-
-        .contact-button {
-            background-color: #476ec9;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 18px;
-            border-radius: 30px;
-            cursor: pointer;
-            margin-top: 30px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .contact-button:hover {
-            background-color: #181829;
-            transform: scale(1.10);
-        }
-
-        footer {
-            position: absolute;
-            bottom: 10px;
-            color: #a0b4d5;
-            font-size: 14px;
-            text-align: center;
-            width: 100%;
-        }
-        .avatar-background{
-            background-color: #1c2773;
-            color: white;
-            border: none;   
-            padding: 30px 90px;
-            border-radius: 30px;
-            position: absolute; left: 30px; top: 20px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        .avatar{
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            position: absolute; left: 10px; top: 5px;
-        }
-        .avatar-text{
-            font-size: 20px;
-            color : #000000;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-            text-align: left;
-            position: absolute; left: 70px; top: 15px;
-        }
-        .avatar-background:hover {
-            background-color: #596df7;
-            transform: scale(1.10);
-        }
-        @media (max-width: 768px) {
-            .main-title {
-                font-size: 36px;
-            }
-
-            .maintitle-subtitle,
-            .about-me,
-            .currently-learning,
-            .loves,
-            .avatar-text {
-                font-size: 16px;
-            }
-
-            .contact-button {
-                padding: 15px 20px;
-                font-size: 16px;
-            }
-
-            .avatar-background {
-                padding: 30px 80px;
-                left: 5px;
-                top: 5px
-            }
-
-            .avatar-text {
-                top: 19px;
-                left: 65px;
-            }
-            .avatar{
-                top:5px;
-                left: 10px;
-            }
-        }
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
+    <div class="title">
+    <h1 id="title-name">About me!</h1>
     <div class="avatar-background">
-        <img src="506fb79ca3f554614ca8389c19771676.webp" alt="Avatar" class="avatar">
-        <a href="https://discord.com/users/802167689011134474"><span class="avatar-text">Sacul0457</span></a>
+        <img src="506fb79ca3f554614ca8389c19771676.webp" alt="" id="avatar">
+        <a href="https://discord.com/users/802167689011134474">
+        <button class="discord-btn">
+        Sacul0457
+        </button>
+        </a>
+    </div>
     </div>
 
+    <div class="everything">
+        <div class="container">
+            <div id="name">Sacul</div>
+            <div id="description">Heya! I'm Sacul, a python developer and enthusiast!</div>
+            <div class="github-background">
+                <img src="github-mark-white.png" alt="Github" id="github-icon">
+                <a href="https://github.com/Sacul0457">
+                <button id="github-btn">
+                Github
+                </button>
+                </a>
+        </div>
+    </div>
 
-
-    <h1 class="main-title">Sacul0457</h1>
-    <h4 class="maintitle-subtitle">Develops Discord bots for fun! (I love cookies 🍪!)</h4>
-    
-    <ul>
-        <h3 class="about-me">About me</h3>
-        <li><p class="currently-learning">Currently learning: HTML, CSS, Python, Discord.py🚀</p></li>
-        <li><p class="loves">Loves: Programming, Python/D.py, JJK/Anime, Football! 💗</p></li>
-    </ul>
-
-    <a href="https://discord.com/users/802167689011134474">
-        <button class="contact-button"><b>Discord/Contact</b></button>
-    </a>
-
-    <footer>
-        <p>Made by Sacul0457 | © 2025</p>
-    </footer>
 </body>
+
+
+</html>
 
 </html>
