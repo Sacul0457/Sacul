@@ -75,7 +75,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #2e396b;
-  height: auto;
+  justify-content: center;
   width: 80%;
   max-width: 50rem;
   border-radius: 1rem;
@@ -155,11 +155,10 @@ body {
 
   #title-name {
     font-size: 2rem;
+    margin-top: 3rem;
   }
 
   #name {
     margin-top: 0.5rem;
   }
-}
-  border-radius: 50%;
 }
