@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
-  background: linear-gradient(120deg, #23243a 0%, #4f5eb8 50%, #788ee3 100%);
+  background: linear-gradient(120deg, #7484ec 0%, #1b256d 50%, #6577d4 100%);
   background-size: 200% 200%;
   animation: modernBgMove 14s ease-in-out infinite alternate;
   filter: blur(10px) brightness(0.8);
@@ -55,7 +55,7 @@ header {
   z-index: 1;
   max-width: 480px;
   width: 100%;
-  background: rgba(24, 26, 40, 0.92);
+  background: linear-gradient(120deg, #070814 0%, #2540d8 50%, #0a0e20 100%);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
   border-radius: 2rem;
   padding: 3rem 2.5rem 2.5rem 2.5rem;
@@ -80,9 +80,9 @@ header {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1.2rem;
-  border: 4px solid #4f5eb8;
+  border: 4px solid #0f102c;
   box-shadow: 0 2px 16px rgba(79,94,184,0.18);
-  background: #fff;
+  background: #ffffff;
 }
 
 .main-title {
