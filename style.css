@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
-  background-image: url(Screenshot 2024-10-01 130327.png);
+  background-image: url(Screenshot\ 2024-10-01\ 130327.png);
   background-size: 125% 125%;
   animation: modernBgMove 14s ease-in-out infinite alternate;
   filter: blur(7px) brightness(0.8); 
