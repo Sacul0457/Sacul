@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', 'Space Grotesk', Arial, sans-serif;
+  background: #181c2b;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+}
+.modern-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  background-image: url('../assets/background.png');
+  background-size: 125% 125%;
+  animation: modernBgMove 14s ease-in-out infinite alternate;
+  filter: blur(7px) brightness(0.8); 
+}
+@keyframes modernBgMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+  display: none;
+}
+.about-title {
+  font-family: 'Space Grotesk', 'Inter', Arial, sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #b7c2e7;
+  letter-spacing: 0.04em;
+  margin: 0;
+  text-shadow: 0 4px 24px rgba(79,94,184,0.18);
+}
+
+.modern-card {
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 10px 30px 32px 0 rgba(255, 255, 255, 0.336);
+  border-radius: 6rem;
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.1;
+  transform: translateY(40px) scale(0.98);
+  animation: cardFadeIn 1.2s cubic-bezier(.77,0,.18,1) 0.2s forwards;
+}
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modern-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 4px solid #000000;
+  box-shadow: 0 2px 16px rgba(255, 255, 255, 0.18);
+
+}
+
+.main-title {
+  font-family: 'Space Grotesk', 'Inter', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 0.04em;
+  margin: 0 0 0 0;
+  text-shadow: 0 4px 24px rgba(79,94,184,0.18);
+  text-align: end;
+}
+.subtitle {
+  font-size: 1.20rem;
+  color: rgb(4, 255, 138);
+  margin: 0 0 1.7rem 0;
+  block-size: 9px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+
+.subtitle a{
+  color: #ffffff
+
+}
+
+.modern-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+.modern-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(181, 182, 245, 0.37);
+  box-shadow: 0 2px 8px rgba(79,94,184,0.10);
+  border: none;
+  transition: background 0.3s, transform 0.25s, box-shadow 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+.modern-icon-btn:hover, .modern-icon-btn:focus-visible {
+  background: rgba(196, 203, 228, 0.829);
+  transform: scale(1.16);
+  box-shadow: 0 4px 24px rgba(32, 32, 37, 0.18);
+}
+.modern-icon-img {
+  width: 36px;
+  height: 36px;
+  display: block;
+  object-fit: contain;
+}
+
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  
+  box-shadow: 15px 10px 32px 0 rgba(252, 211, 211, 0.336);
+  border-radius: 1.2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+
+  color: white;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0.5;
+
+  transform: translateY(15px);
+  scale: 0.98;
+  transition: transform 0.3s ease, scale 0.3s ease, background 0.3s ease;
+  animation: backBtnFadeIn cubic-bezier(.77,0,.18,1) 1.6s forwards;
+}
+
+@keyframes backBtnFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back-btn:hover {
+  scale: 1.04;
+  background: rgba(207,207,255,0.8);
+}
+
+
+@media (max-width: 700px) {
+  .modern-card {
+    max-width: 97vw;
+    padding: 2rem 0.7rem 1.5rem 0.7rem;
+  }
+  .main-title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .modern-icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .modern-icon-img {
+    width: 28px;
+    height: 28px;
+  }
+  .back-btn {
+    padding: 0.8rem 1.2rem; width: 78px; height: 35px; font-size: 0.9rem;
+  }
+  .modern-avatar {
+    width: 80px;
+    height: 80px;
+    border-width: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modern-card {
+    padding: 1.2rem 0.2rem 1rem 0.2rem;
+  }
+  .main-title {
+    font-size: 1rem;
+  }
+  .modern-icon-btn {
+    width: 28px;
+    height: 28px;
+  }
+  .modern-icon-img {
+    width: 18px;
+    height: 18px;
+  }
+  .back-btn {
+    padding: 0.6rem 1rem; width: 68px; height: 28px; font-size: 0.8rem;
+  }
+  .modern-avatar {
+    width: 48px;
+    height: 48px;
+    border-width: 2px;
+  }
+}
